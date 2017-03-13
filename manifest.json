@@ -1,0 +1,27 @@
+{
+    "name":"Map QR Code",
+    "version":"0.1",
+    "manifest_version":2,
+    "description":"Display current map location as QR Code in Google maps",
+    "background":{
+        "scripts":[
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [ "http://www.google.co.in/maps/*", "https://www.google.co.in/maps/*"],
+            "js": ["qrcode.js", "content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions":[
+        "http://www.google.co.in/*",
+        "https://www.google.co.in/*",
+        "tabs"
+    ],
+    "icons":{
+        "16":"icon-16.png"
+    }
+}
