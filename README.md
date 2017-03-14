@@ -1,5 +1,7 @@
 # Map-QR-Code
 
+![Map QR Code](https://github.com/crunchbang/Map-QR-Code/blob/master/screenshot.jpg)
+
 A simple Chrome extension to display current Google Maps location as an embedded QR Code.
 
 Inspired by [chrome-qrcode-extension](https://github.com/fxkr/chrome-qrcode-extension).
